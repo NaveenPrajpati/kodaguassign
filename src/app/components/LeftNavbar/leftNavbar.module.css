@@ -1,0 +1,27 @@
+.container{
+    width: 100px;
+height: 1075px;
+flex-shrink: 0;
+border-right: 1px solid #EDEFF2;
+color: black;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.firstset{
+    margin-top: 40px;
+   align-items: center;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.secondset{
+    margin-bottom: 30px;
+    align-items: center;
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+}
