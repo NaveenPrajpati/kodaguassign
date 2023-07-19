@@ -50,6 +50,36 @@ position: relative;
     line-height: 30px; /* 214.286% */
 }
 
+.profileDot{
+    width: 20px;
+   
+    background: #3361FF;
+    position: absolute;
+    border-radius: 100%;
+    top: 62px;
+    left: 120px;
+
+    height: 20px;
+flex: 1 0 0;
+    text-align: center;    /* Black 12 */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px;
+    
+}
+.profileDotText{
+    color: var(--white, #FFF);
+text-align: center;
+
+/* Black 12 */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px; /* 166.667% */
+}
 .gridMenu{
 display: grid;
 grid-template-columns:120px 120px;
@@ -106,4 +136,10 @@ background: var(--white, #FFF);
 color:'#3361FF';
 /* Shadows/Gray Blue/3%/30b */
 box-shadow: 0px 10px 30px 0px rgba(38, 51, 77, 0.03);
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        display: none;
+    }
 }

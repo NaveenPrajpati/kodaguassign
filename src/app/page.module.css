@@ -1,13 +1,8 @@
-.main {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
 
-
-}
 .container{
-  Width:1600px;
+  width:1600px;
   Height:1170px;
   background: #F7F8FA;
   margin: 0 auto;
+
 }

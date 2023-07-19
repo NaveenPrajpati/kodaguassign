@@ -25,3 +25,18 @@ flex-direction: column;
 gap: 15px;
 
 }
+.dotImageDiv{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.dotImage{
+    position: absolute;
+    left: 33px;
+  
+}
+@media screen and (max-width:400px){
+    .container{
+    display: none;
+    }
+}

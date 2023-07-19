@@ -7,21 +7,12 @@
     justify-content: space-between;
     border: 1px solid #EDEFF2;
     align-items: center;
+    
 }
-.icon{
-    display: flex;
-width: 50px;
-height: 50px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-background: white;
-border-radius: 100%;
-}
-.logo{
-    color: var(--grey-blue-50, #4D5E80);
 
+.logoName{
+    color: var(--grey-blue-50, #4D5E80);
+display: block;
 /* Bold 18 */
 font-family: Roboto;
 font-size: 18px;
@@ -85,4 +76,37 @@ font-style: normal;
 font-weight: 700;
 line-height: 25px; /* 192.308% */
 margin-right: 15px;
+}
+.dotImageDiv{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.dotImage{
+    position: absolute;
+    left: 33px;
+}
+.smallScreenUser{
+    
+  display: none;
+}
+
+@media screen and (max-width:400px){
+    .container{
+        width: 100vw;
+        gap: 80px;
+    }
+    .navlinks{
+        display: none;
+
+    }
+    .searchbar{
+        display: none;
+    }
+    .userInfo{
+        display: none;
+    }
+    .smallScreenUser{
+       display:block
+    }
 }

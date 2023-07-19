@@ -11,6 +11,8 @@ import img1 from './assets/Image.png'
 import img2 from './assets/Image (1).png'
 import img3 from './assets/Image (2).png'
 import img4 from './assets/Image (3).png'
+import dotimg from './assets/color-dot-5.png'
+
 
 function LeftNavbar() {
     return (
@@ -23,8 +25,12 @@ function LeftNavbar() {
            <div className='icon'>
             <Image src={image2} alt='no'/> 
             </div>
-           <div className='icon'>
+           <div className='dotImageDiv'>
+           <div className='icon' style={{position:'absolute'}}>
             <Image src={image3} alt='no'/> 
+            </div>
+            <Image src={dotimg} alt='no' className='dotImage' /> 
+
             </div>
            <div className='icon'>
             <Image src={image4} alt='no'/> 
@@ -38,7 +44,11 @@ function LeftNavbar() {
            </div>
            <div className={styles.secondset}>
            
-            <Image src={img1} alt='no' style={{background:'#FF6633',borderRadius:'100%'}}/> 
+           <div className='dotImageDiv'>
+            <Image src={img1} alt='no' style={{background:'#FF6633',borderRadius:'100%',position:'absolute'}}/> 
+            <Image src={dotimg} alt='no' className='dotImage' /> 
+
+           </div>
            <Image src={img2} alt='no' style={{background:'#E62E7B',borderRadius:'100%'}}/> 
            <Image src={img3} alt='no' style={{background:'#8833FF',borderRadius:'100%'}}/> 
            <Image src={img4} alt='no' style={{background:'#FFCB33',borderRadius:'100%'}}/> 
