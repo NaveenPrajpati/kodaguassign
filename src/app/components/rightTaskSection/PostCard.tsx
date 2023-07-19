@@ -5,6 +5,7 @@ import list from './assets/list.png'
 import attach from './assets/attachment.png'
 import alaram from './assets/access_alarms.png'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { Key } from 'react';
 
 
 function PostCard({image,name,heading,action,attachment,alarm,avatar}:any) {
@@ -15,8 +16,8 @@ function PostCard({image,name,heading,action,attachment,alarm,avatar}:any) {
     <div style={{display:'flex',justifyContent:'space-between'}}>
     <small className={styles.todoItem1name}>{name}</small>
     <div style={{display:'flex'}}>
-    {avatar.map((it: string | StaticImport)=>(
-        <Image alt='?' src={it}/>
+    {avatar.map((it: string | StaticImport,index: Key | null | undefined)=>(
+        <Image key={index} alt='?' src={it}/>
         ))}</div>
     </div>
     <p className={styles.todoItem1heading}>{heading}</p>

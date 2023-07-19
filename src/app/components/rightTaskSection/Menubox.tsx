@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './taskSection.module.css'
 import imgbig from './assets/Imagebig.png'
-import imgbig2 from './assets/imgBig2.png'
+import imgbig2 from './assets/imgbig2.png'
 import avtar from './assets/Avatar Image.png'
 import avtar1 from './assets/Avatar Image (1).png'
 import avtar2 from './assets/Avatar Image (2).png'
